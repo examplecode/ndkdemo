@@ -1,0 +1,6 @@
+bin
+*.class
+*.o
+*.so
+gen
+libs
