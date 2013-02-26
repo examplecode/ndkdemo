@@ -64,9 +64,13 @@ GetMethodID方法最后一个参数为“()V"为方法签名，主要用来区�
 	javap -classpath . -s com.example.hellojni.HelloJni
 
 
-# hello-jni2 
+## hello-jni2 
 
 本示例在原版本做了些改进，主要是在于java调用c++ 代码的时候我们采用了动态注册的方式，避免了采用又长又丑的本地方法名称，最重要的是避免了c++ 的方法和java名字空间的直接依赖。你可以看到本地c++方法名称做了下面的改变。
 
 	Java_com_example_hellojni_HelloJni_stringFromJNI => stringFromJNI
 
+
+## two-share-lib
+
+演示了在jni调用过程中依赖多个.so的情况
